@@ -1,0 +1,53 @@
+/*! ../../blocks/components/dialog-window/dialog.js */
+
+/*! ../../blocks/components/forms/form-netb.js */
+
+/*! ../../blocks/components/rightside-menu/rightside-menu.js */
+
+/*! ../../blocks/modules/gallery/gallery.js */
+
+/*! ../../blocks/modules/header/header.js */
+
+/*! ../../blocks/modules/slider/slider.js */
+
+/*! ./import/components.js */
+
+/*! ./import/modules.js */
+
+/*! regenerator-runtime -- Copyright (c) 2014-present, Facebook, Inc. -- license (MIT): https://github.com/facebook/regenerator/blob/main/LICENSE */
+
+/*!******************************!*\
+  !*** ./src/scripts/index.js ***!
+  \******************************/
+
+/*!***************************************!*\
+  !*** ./src/scripts/import/modules.js ***!
+  \***************************************/
+
+/*!******************************************!*\
+  !*** ./src/scripts/import/components.js ***!
+  \******************************************/
+
+/*!*********************************************!*\
+  !*** ./src/blocks/modules/header/header.js ***!
+  \*********************************************/
+
+/*!*********************************************!*\
+  !*** ./src/blocks/modules/slider/slider.js ***!
+  \*********************************************/
+
+/*!***********************************************!*\
+  !*** ./src/blocks/modules/gallery/gallery.js ***!
+  \***********************************************/
+
+/*!**************************************************!*\
+  !*** ./src/blocks/components/forms/form-netb.js ***!
+  \**************************************************/
+
+/*!*******************************************************!*\
+  !*** ./src/blocks/components/dialog-window/dialog.js ***!
+  \*******************************************************/
+
+/*!****************************************************************!*\
+  !*** ./src/blocks/components/rightside-menu/rightside-menu.js ***!
+  \****************************************************************/

@@ -1,0 +1,220 @@
+
+
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Описание сайта" />
+		<meta name="robots" content="noodp" />
+		<meta name="keywords" content="gulp, nunjucks, webpack" />
+		<meta name="theme-color" content="#fff" />
+		<meta
+			name="apple-mobile-web-app-status-bar-style"
+			content="black-translucent"
+		/>
+		<link rel="icon" href="img/favicons/favicon.svg" />
+		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+		<link rel="manifest" href="manifest.json" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+		/>
+		<script src="https://api-maps.yandex.ru/2.1/?apikey=078bce5f-2a28-40b2-aa3e-e913d5ca7ed8&lang=en_US" type="text/javascript">
+    </script>
+		<script type="text/javascript">
+    ymaps.ready(init);
+    function init(){
+        // Создание карты.
+        var myMap = new ymaps.Map("map", {
+            center: [51.017065257883736,3.6351846425780905],
+            zoom: 10,
+						controls: []
+        });
+				myMap.behaviors.disable('scrollZoom');
+
+				// Добавление метки
+        // https://tech.yandex.ru/maps/doc/jsapi/2.1/ref/reference/Placemark-docpage/
+        var myPlacemark = new ymaps.Placemark([51.017065257883736,3.6351846425780905], {
+            // Хинт показывается при наведении мышкой на иконку метки.
+            hintContent: 'Jl. Raya Surabaya 2787',
+            // Балун откроется при клике по метке.
+            balloonContent: 'Jl. Raya Surabaya 2787'
+        });
+
+        // После того как метка была создана, добавляем её на карту.
+        myMap.geoObjects.add(myPlacemark);
+
+    }
+</script>
+		<link rel="stylesheet" href="styles/main.css" />
+		<title>GULP</title>
+	</head>
+	<body>
+		<div class="o-page__wrapper">
+			<header class="m-header js-scroll">
+	<div class="o-container">
+		<div class="m-header__inner">
+			<a class="link-logo" href="/">
+				<picture>
+					<source srcset="./img/logo.avif" type="image/avif" />
+					<source srcset="./img/logo.webp" type="image/webp" />
+					<source srcset="./img/logo.png" type="image/png" />
+					<img
+						class="logo-img"
+						src="./img/logo.png"
+						alt="logo-tzeezotje"
+						width="269"
+						height="55"
+					/>
+				</picture>
+			</a>
+			<button class="mobile-btn js-mobile-btn">
+				<svg class="icon-mobile" width="36" height="24">
+					<use xlink:href="./img/sprites/s-mono.svg#icon_menu"></use>
+				</svg>
+			</button>
+			<div class="rightside-menu js-rightside-menu">
+	<button class="rightside-menu__close js-rightside-menu__close">
+		<img
+			class="img-close"
+			src="./img/close.svg"
+			alt="close"
+			width="28"
+			height="28"
+		/>
+	</button>
+	<nav class="menu">
+		<ul class="menu__list">
+			<li class="menu__item">
+				<a class="menu__item-link" href="/">À la carte</a>
+			</li>
+			<li class="menu__item">
+				<a class="menu__item-link" href="/">Wijnkaart</a>
+			</li>
+			<li class="menu__item">
+				<a class="menu__item-link" href="/">Lunchmenu</a>
+			</li>
+			<li class="menu__item">
+				<a class="menu__item-link" href="/">Contact</a>
+			</li>
+		</ul>
+	</nav>
+	<a
+		class="link-phone"
+		href="tel:+3292825725"
+	>
+		<svg class="icon-phone">
+			<use xlink:href="./img/sprites/s-mono.svg#phone"></use>
+		</svg>
+		<span>+32 9 282 57 25</span>
+	</a>
+	<div class="block-socials">
+		<ul class="list-social">
+	<li class="list-social__item">
+		<a class="list-social__link" href="/">
+			<svg class="icon-social">
+				<use xlink:href="./img/sprites/s-mono.svg#fb"></use>
+			</svg>
+		</a>
+	</li>
+	<li class="list-social__item">
+		<a class="list-social__link" href="/">
+			<svg class="icon-social">
+				<use xlink:href="./img/sprites/s-mono.svg#lg"></use>
+			</svg>
+		</a>
+	</li>
+	<li class="list-social__item">
+		<a class="list-social__link" href="/">
+			<svg class="icon-social">
+				<use xlink:href="./img/sprites/s-mono.svg#tw"></use>
+			</svg>
+		</a>
+	</li>
+	<li class="list-social__item">
+		<a class="list-social__link" href="/">
+			<svg class="icon-social">
+				<use xlink:href="./img/sprites/s-mono.svg#yt"></use>
+			</svg>
+		</a>
+	</li>
+</ul>
+
+	</div>
+</div>
+
+		</div>
+	</div>
+</header>
+
+			
+<h1>Hello world! PAGE</h1>
+
+			<footer class="m-footer">
+	<div class="o-container">
+		<div class="m-footer__inner">
+			<div class="m-footer__logo">
+				<a class="link-logo" href="/">
+					<picture>
+						<source srcset="./img/f-logo.avif" type="image/avif" />
+						<source srcset="./img/f-logo.webp" type="image/webp" />
+						<source srcset="./img/f-logo.png" type="image/png" />
+						<img
+							class="logo-img"
+							src="./img/f-logo.png"
+							alt="logo-tzeezotje"
+							width="269"
+							height="55"
+						/>
+					</picture>
+				</a>
+			</div>
+			<div class="m-footer__socials">
+				<ul class="list-social">
+	<li class="list-social__item">
+		<a class="list-social__link" href="/">
+			<svg class="icon-social">
+				<use xlink:href="./img/sprites/s-mono.svg#fb"></use>
+			</svg>
+		</a>
+	</li>
+	<li class="list-social__item">
+		<a class="list-social__link" href="/">
+			<svg class="icon-social">
+				<use xlink:href="./img/sprites/s-mono.svg#lg"></use>
+			</svg>
+		</a>
+	</li>
+	<li class="list-social__item">
+		<a class="list-social__link" href="/">
+			<svg class="icon-social">
+				<use xlink:href="./img/sprites/s-mono.svg#tw"></use>
+			</svg>
+		</a>
+	</li>
+	<li class="list-social__item">
+		<a class="list-social__link" href="/">
+			<svg class="icon-social">
+				<use xlink:href="./img/sprites/s-mono.svg#yt"></use>
+			</svg>
+		</a>
+	</li>
+</ul>
+
+			</div>
+		</div>
+	</div>
+</footer>
+
+		</div>
+
+		
+		<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
